@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+  background: linear-gradient(0deg,#000319 0%,#302563 50%,#9f8fe1 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #00051a;
+}
