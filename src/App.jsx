@@ -23,7 +23,6 @@ useEffect(() => {
   }
 },[])
 
-
   const SaveToLocalStorage=()=>{
     localStorage.setItem("todo", JSON.stringify(todo));
   }
@@ -50,6 +49,7 @@ useEffect(() => {
     console.log(newTodo[index].isCompleted)
     settodo(newTodo);
     SaveToLocalStorage()
+
 }
 
 
@@ -107,7 +107,7 @@ useEffect(() => {
             todo.map((item) => {
               return ( (!show) || (item.isCompleted) ) && <div key={item.id} className="todos flex justify-between items-center">
                 <div className="todo flex items-center gap-3">
-                  <input type="checkbox" onChange={handleCheck}  name={item.id} className='w-[15px] focus:outline-none pl-2'/>
+                  <input type="checkbox" onChange={handleCheck}  checked={item.isCompleted}  name={item.id} className='w-[15px] focus:outline-none pl-2'/>
                   <p className={item.isCompleted?"line-through text-red-700 text-[16px] font-semibold " : "text-[16px] font-semibold"}>{item.task}</p>
                 </div>
                 <div className="btn flex gap-2">
