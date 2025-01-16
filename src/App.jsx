@@ -51,8 +51,6 @@ useEffect(() => {
     SaveToLocalStorage()
 
 }
-
-
   const handleDelete=(e,id)=>{
     console.log(id)
       let DeletedTodo = todo.filter(item=>{
