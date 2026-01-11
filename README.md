@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 Let deploy it now!
 try 1
+try 2
