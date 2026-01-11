@@ -7,6 +7,9 @@ on:
 jobs:
   react-build-deploy:
     runs-on: ubuntu-latest
+    concurrency: 
+        group: Deploy the latest
+        cancel-in-progress: true
 
     steps:
       - name: Checkout
