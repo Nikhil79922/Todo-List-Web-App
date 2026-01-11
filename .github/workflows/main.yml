@@ -23,4 +23,11 @@ jobs:
 
       - name: Build app
         run: npm run build
+        
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v6.0.0
+        with:
+          name: Build the next js build on Artifact
+          path: dist/
+         
 
